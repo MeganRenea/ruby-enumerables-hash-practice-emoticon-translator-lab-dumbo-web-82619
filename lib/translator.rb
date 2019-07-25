@@ -24,6 +24,6 @@ def get_japanese_emoticon (library, emoticon)
     return "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning (library, emoticon)
+  
 end
