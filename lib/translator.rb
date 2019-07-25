@@ -18,7 +18,10 @@ end
 
 def get_japanese_emoticon (library, emoticon)
   library = load_library(library)
-  library[:get_emoticon][emoticon]
+  if library[:get_emoticon].keys.include?(emoticon)
+  return library[:get_emoticon][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
