@@ -3,7 +3,7 @@ require "pry"
 
 def load_library(library)
   library = YAML.load_file(library)
-  binding.pry
+  #binding.pry
   library = library.reduce({}) do |memo, (key,value)|
     japanese = value[1]
     english = value[0]
