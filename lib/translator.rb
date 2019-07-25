@@ -25,5 +25,5 @@ def get_japanese_emoticon (library, emoticon)
 end
 
 def get_english_meaning (library, emoticon)
-  
+  library = load_library(library)
 end
