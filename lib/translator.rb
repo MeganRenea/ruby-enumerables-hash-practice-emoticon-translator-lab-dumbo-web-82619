@@ -26,4 +26,8 @@ end
 
 def get_english_meaning (library, emoticon)
   library = load_library(library)
+  if library[:get_meaning].keys.include?(emoticon)
+  return library[:get_meaning][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
 end
