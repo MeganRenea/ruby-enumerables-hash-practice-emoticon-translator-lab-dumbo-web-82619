@@ -7,6 +7,7 @@ def load_library(library)
     memo["get_meaning"] = {key => nil}
     memo["get_emoticon"] = {value => nil}
     memo
+    binding.pry
   end
   library
 end
