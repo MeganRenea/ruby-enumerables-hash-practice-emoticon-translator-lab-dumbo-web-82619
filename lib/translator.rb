@@ -6,8 +6,8 @@ def load_library(library)
   library = library.reduce({}) do |memo, (key,value)|
     japanese = value[1]
     english = value[0]
-    memo["get_meaning"] = {key => japanese}
-    memo["get_emoticon"] = {key => english}
+    memo["get_meaning"] = {japanese => key}
+    memo["get_emoticon"] = {english => key}
     memo
     #binding.pry
   end
