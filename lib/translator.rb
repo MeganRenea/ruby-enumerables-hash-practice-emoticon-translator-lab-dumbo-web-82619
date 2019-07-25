@@ -7,7 +7,7 @@ def load_library(library)
     japanese = value[1]
     english = value[0]
     memo["get_meaning"] = {key => japanese}
-    memo["get_emoticon"] = {value => english}
+    memo["get_emoticon"] = {key => english}
     memo
     #binding.pry
   end
