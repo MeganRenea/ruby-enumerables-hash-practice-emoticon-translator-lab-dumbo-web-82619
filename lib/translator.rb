@@ -2,7 +2,7 @@ require "yaml"
 require "pry"
 
 def load_library(library)
-  YAML.load_file(library)
+  library = YAML.load_file(library)
   binding.pry
 end
 
