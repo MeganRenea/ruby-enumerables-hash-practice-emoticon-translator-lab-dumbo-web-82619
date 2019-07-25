@@ -16,7 +16,7 @@ def load_library(library)
  # binding.pry
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon (library, emoticon)
   # code goes here
 end
 
