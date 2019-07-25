@@ -3,14 +3,15 @@ require "pry"
 
 def load_library(library)
   library = YAML.load_file(library)
+  new = {:get_meaning => nil, :get_emoticon => nil}
   #binding.pry
-  library = library.reduce({}) do |memo, (key,value)|
+  library.each do |(key,value)|
     japanese = value[1]
     english = value[0]
-    memo["get_meaning"][japanese] = key
-    memo["get_emoticon"][english] = japanese
+    memo[:get_meaning][japanese] = key
+    memo[:get_emoticon][english] = japanese
     memo
-    #binding.pry
+    binding.pry
   end
   library
   #binding.pry
