@@ -9,7 +9,7 @@ def load_library(library)
     memo["get_meaning"] = {key => japanese}
     memo["get_emoticon"] = {value => english}
     memo
-    binding.pry
+    #binding.pry
   end
   library
 end
