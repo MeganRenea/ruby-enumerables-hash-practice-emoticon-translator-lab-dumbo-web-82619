@@ -7,15 +7,8 @@ def load_library(library)
   library = library.reduce({}) do |memo, (key,value)|
     japanese = value[1]
     english = value[0]
-    if memo["get_meaning"]
     memo["get_meaning"][japanese] = key
-    else 
-      memo["get_meaning"]
-    end
-    if memo["get_emoticon"]
     memo["get_emoticon"][english] = japanese
-    else memo["get_emoticon"]
-    end
     memo
     #binding.pry
   end
