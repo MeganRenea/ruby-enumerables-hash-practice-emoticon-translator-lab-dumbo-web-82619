@@ -8,9 +8,8 @@ def load_library(library)
   library.each do |(key,value)|
     japanese = value[1]
     english = value[0]
-    memo[:get_meaning][japanese] = key
-    memo[:get_emoticon][english] = japanese
-    memo
+    new[:get_meaning][japanese] = key
+    new[:get_emoticon][english] = japanese
     binding.pry
   end
   library
