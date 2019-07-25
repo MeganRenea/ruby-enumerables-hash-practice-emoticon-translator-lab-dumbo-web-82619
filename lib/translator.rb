@@ -10,6 +10,7 @@ def load_library(library)
     english = emoticon[0]
     new[:get_meaning][japanese] = meaning
     new[:get_emoticon][english] = japanese
+    new
     #binding.pry
   end
   library
